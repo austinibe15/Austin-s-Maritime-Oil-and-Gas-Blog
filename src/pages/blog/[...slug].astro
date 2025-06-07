@@ -1,29 +1,22 @@
-// Import necessary modules from Astro and Astro Content.
+---
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 
 // This function generates static paths for each blog post.
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');  // Get all blog posts from the 'blog' collection.
-  
+  const posts = await getCollection('blog');
   return posts.map((post) => ({
-    params: { slug: post.id },  // Use post.id as the slug for the dynamic route.
+    params: { slug: post.id }, // Use post.id to match the route
   }));
 }
 
-// Define the type for the props that will be passed to the Astro component.
 type Props = CollectionEntry<'blog'>;
-
-// Get the current blog post data from the props.
 const post = Astro.props;
-
-// Ensure 'body' exists inside post.data (if needed)
-const postBody = post.data.body ?? post.body;
 ---
 
-<BlogPost {...post.data}>  <!-- Pass the blog post data to the BlogPost layout. -->
+<BlogPost {...post.data}>
   <article>
-    <!-- Render the body of the blog post -->
-    {postBody}  <!-- Render post.body (if post.body is directly available, or use post.data.body) -->
+    <!-- Render the body of the post -->
+    {post.body}
   </article>
 </BlogPost>

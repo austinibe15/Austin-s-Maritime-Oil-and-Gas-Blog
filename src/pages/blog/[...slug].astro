@@ -1,4 +1,3 @@
----
 // Import necessary modules from Astro and Astro Content.
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
@@ -17,11 +16,14 @@ type Props = CollectionEntry<'blog'>;
 
 // Get the current blog post data from the props.
 const post = Astro.props;
+
+// Ensure 'body' exists inside post.data (if needed)
+const postBody = post.data.body ?? post.body;
 ---
 
 <BlogPost {...post.data}>  <!-- Pass the blog post data to the BlogPost layout. -->
   <article>
     <!-- Render the body of the blog post -->
-    {post.body}  <!-- This assumes 'body' is a direct property of post. You may need to check if it's inside 'data'. -->
+    {postBody}  <!-- Render post.body (if post.body is directly available, or use post.data.body) -->
   </article>
 </BlogPost>

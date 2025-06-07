@@ -1,0 +1,43 @@
+---
+// This is the full about.astro page with the doctype included in the layout
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Layout from '../layouts/BlogPost.astro';
+--- 
+
+<!-- Use BaseLayout to include <!DOCTYPE html> and basic head structure -->
+<BaseLayout>
+  <!-- Then embed your BlogPost layout for styling and structural consistency -->
+  <Layout
+    title="About Me"
+    description="Sharing my ocean adventures, experiences at sea, and future collaborations."
+    pubDate={new Date('August 08 2021')}
+    heroImage="/blog-placeholder-about.jpg"
+  >
+    <section>
+      <p>
+        Welcome! This page is a bit different from my main blog, dedicated to sharing my adventures on the high seas. Over time, I will update this space with stories, photos, and videos from my journeys working at sea.
+      </p>
+      <p>
+        My experience includes working as an Able Seaman, combining my passion for the ocean with my skills in IT and software engineering. This unique blend opens doors for exciting collaboration opportunities—whether for work, research, or adventure projects.
+      </p>
+      <h2>Ocean Ambassador Project</h2>
+      <p>
+        Here is an introductory video highlighting the Ocean Ambassador project, which aims to promote awareness about life and work at sea.
+      </p>
+      <video controls src="/videos/ocean-ambassador-intro.mp4" style={{ width: '100%', maxWidth: '600px' }}></video>
+      <h2>Sea Experiences</h2>
+      <p>
+        I invite you to explore my collection of photos and videos from my time at sea. These visuals capture the essence of life aboard, the challenges, and the beauty of the ocean.
+      </p>
+      {/* Example photo gallery or slideshow */}
+      <div>
+        <img src="/images/sea1.jpg" alt="Sea view" style={{ width: '100%', maxWidth: '400px' }} />
+        <img src="/images/sea2.jpg" alt="Ship at sea" style={{ width: '100%', maxWidth: '400px' }} />
+      </div>
+      <h2>Future Collaborations</h2>
+      <p>
+        I look forward to connecting with shipping companies, corporate stakeholders, or individuals interested in ocean work life. My background in IT and software engineering could be an asset for innovative projects, research, or adventures at sea.
+      </p>
+    </section>
+  </Layout>
+</BaseLayout>

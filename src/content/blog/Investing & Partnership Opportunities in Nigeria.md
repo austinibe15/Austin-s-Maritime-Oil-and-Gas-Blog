@@ -1,8 +1,10 @@
 ---
 title: 'Investing & Partnership Opportunities in Nigeria'
 description: 'Exploring Nigeria’s key sectors for investment—Oil & Gas, Maritime Logistics, Financial Instruments—and how technology and software development can power growth.'
-pubDate: 'May 23 2025'
+pubDate: 'May 23, 2025'
 heroImage: '/blog-placeholder-5.jpg'
+slug: 'investing-partnership-opportunities-in-nigeria'  # <-- Added 'slug' for dynamic route matching
+
 ---
 
 

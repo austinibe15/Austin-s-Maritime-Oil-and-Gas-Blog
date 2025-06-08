@@ -1,8 +1,10 @@
 ---
 title: 'Financial Instruments: SBLC, BG, and More'
 description: 'An overview of key financial instruments used in international trade and project finance.'
-pubDate: 'May 13 2025'
+pubDate: 'May 13, 2025'
 heroImage: '/blog-placeholder-2.jpg'
+slug: 'financial-instruments-sblc-bg-and-more'  # <-- Added 'slug' for dynamic route matching
+
 ---
 
 #Understanding Financial Instruments: SBLC, BG, and More

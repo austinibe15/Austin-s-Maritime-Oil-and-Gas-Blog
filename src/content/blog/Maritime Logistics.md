@@ -1,11 +1,13 @@
 ---
 title: "Advancing Maritime Logistics in Nigeria"
 description: "An overview of the current state and opportunities in Nigeria's maritime logistics sector."
-pubDate: 2025-05-06
+pubDate: '2025-05-06'
 categories: ["Maritime Logistics"]
 tags: ["shipping", "ports", "Nigeria"]
 summary: "An overview of the current state and opportunities in Nigeria's maritime logistics sector."
 heroImage: '/blog-placeholder-3.jpg'
+slug: 'advancing-maritime-logistics-in-nigeria'  # <-- Added 'slug' for dynamic route matching
+
 ---
 
 

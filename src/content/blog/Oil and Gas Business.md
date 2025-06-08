@@ -1,9 +1,11 @@
 ---
-title: 'Unlocking Opportunities in Nigeria’s Oil & Gas Sector'
-description: 'An insightful guide to navigating Nigeria’s oil and gas procurement and delivery procedures, unlocking the potential for investors and traders.'
-pubDate: 'May 15 2025'
-heroImage: '/blog-placeholder-2.jpg'
+title: 'Oil and Gas Business in Nigeria'
+description: 'A detailed guide on Nigeria’s oil and gas industry, its market opportunities, and investment prospects.'
+pubDate: '2025-05-10'
+heroImage: '/blog-placeholder-4.jpg'
+slug: 'oil-and-gas-business'  # Properly defined slug
 ---
+
 
 Unlocking Opportunities in Nigeria’s Oil & Gas Sector
 Nigeria stands as a powerhouse in Africa’s oil and gas industry, with immense potential for exploration, production, and export. As the largest producer on the continent, Nigeria offers numerous opportunities for local and foreign investors to contribute to its economic growth.

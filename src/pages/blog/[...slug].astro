@@ -4,9 +4,9 @@ import BlogPost from '../../layouts/BlogPost.astro';
 
 // This function generates static paths for each blog post.
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog');  // Fetch all blog posts
   return posts.map((post) => ({
-    params: { slug: post.id }, // Use post.id to match the route
+    params: { slug: post.slug },  // Use post.slug instead of post.id
   }));
 }
 
@@ -17,6 +17,6 @@ const post: Props = Astro.props;       // Properly typed Astro.props
 <BlogPost {...post.data}>
   <article>
     <!-- Render the body of the post -->
-    {post.body}
+    {post.body}  <!-- Render the body of the post here -->
   </article>
 </BlogPost>

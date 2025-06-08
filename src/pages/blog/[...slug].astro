@@ -10,8 +10,8 @@ export async function getStaticPaths() {
   }));
 }
 
-type Props = CollectionEntry<'blog'>;
-const post = Astro.props;
+type Props = CollectionEntry<'blog'>;  // Type definition for post
+const post: Props = Astro.props;       // Properly typed Astro.props
 ---
 
 <BlogPost {...post.data}>
